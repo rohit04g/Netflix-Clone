@@ -1,0 +1,321 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'poppins',sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: white;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/header-image.png);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+ 
+}
+.logo{
+    width: 150px;
+    cursor: pointer;
+    left: 45px;
+    position: relative;
+}
+nav button{
+    font-size: 15px;
+    background-color: #db0001;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 7px 20px;
+    margin-right: 35px;
+    position: relative;
+}
+.language-btn{
+    background-color: transparent;
+    border: 0.1px solid;
+    display: inline-flex;
+    align-items: center;
+    padding: 7px 25px;
+    right: 10px;
+    position: relative;
+}
+.language-btn img{
+    height: 6px;
+    width: 10px;
+    position: relative;
+    left: 8px;
+}
+.language-btn i{
+    font-size: 15px;
+    margin-right: 10px;
+}
+nav button:hover{
+    background-color: #db0000c8;
+}
+.language-btn:hover{
+    background-color: transparent;
+}
+
+
+
+
+
+
+
+/* PAGE-1//////////// */
+.page-1{
+    position: absolute;
+    top: 48%;
+    left: 12.5%;
+    text-align: center;
+    line-height: 50px;
+}
+.page-1 h1{
+    font-size: 45px;
+    line-height: 70px;
+    font-weight: 800;
+}
+.page-1 h3{
+    font-size: 25px;
+    font-weight: 400;
+}
+.page-1 p{
+    font-size: 20px;
+}
+form input{
+    background-color:rgba(0, 0, 0, 0.477);
+    /* padding: 10px 60px; */
+    width: 400px;
+    padding: 15px;
+    font-size: 20px;
+    color: white;
+    border: 1px solid;
+    border-radius:4px;
+    border-color: rgba(255, 255, 255, 0.356);
+}
+form button{
+    background-color: #db0001;
+    font-size: 20px;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    left: 5px;
+    position: relative;
+    cursor: pointer;
+    font-weight: 700;
+}
+form button i{
+    font-size: 20px;
+    position: relative;
+    left: 5px;
+}
+form{
+    position: relative;
+    top: 10px;
+}
+form button:hover{
+    background-color: #db0000c8;
+}
+
+/* FEATURES........................................... */
+
+.features{
+    padding: 50px 12%;
+    font-size: 22px;
+}
+.content{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+.material{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.img-1{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.img-1 img{
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+.material h2{
+    font-size: 50px;
+    font-weight: 800;
+}
+.material p{
+    margin-top: 10px;
+    line-height: 30px;
+}
+
+
+
+/* FAq///////////////// */
+.faq{
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px
+}
+.faq h2{
+    font-size: 50px;
+    font-weight: 800;
+}
+.accordance{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+.accordance li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+.accordance li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+input[type="radio"]{
+    display: none;
+}
+.accordance .content{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ,padding 0.5s;
+}
+.accordance input[type="radio"]:checked + label + .content{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+.accordance input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+.faq .email{
+    max-width: 600px;
+    margin: 20px auto 60px;
+}
+.faq small{
+    font-size: 20px;
+}
+
+
+
+/* FOOTER */
+.footer{
+    padding: 50px 15% 10px;
+    border-top: 6px solid #333;
+    color: #777;
+}
+.footer h2{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.footer .col{
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+.footer .col a{
+    display: block;
+    color: rgb(141, 140, 140);
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.footer .content{
+    align-items: flex-start;
+    padding: 10px 0;
+}
+.footer .language-btn{
+    color: white;
+    padding: 10px 20px;
+    border-radius: 3px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.copyright{
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 50px
+}
+
+
+/* RESPONSIVE */
+@media only screen  and (max-width:600px){
+    .logo{
+        width: 70px;
+        position: relative;
+        top: 30px;
+    }
+    nav{
+        position: relative;
+        right: 60px;
+        bottom: 30px;
+    }
+    nav button{
+        position: relative;
+        top: 30px;
+        padding: 5px 8px;
+        left: 30px;
+        font-size: small;
+    }
+    nav .language-btn{
+        padding: 5px 6px;
+        position:  relative;
+        left: 60px;
+        font-size: small;
+    }
+    .language-btn img {
+        margin-right: 10px;
+    }
+    .page-1{
+        position: unset;
+        transform: none;
+        padding-top: 150px;
+        
+    }
+    .page-1 h1{
+        font-size: 30px;
+        line-height: 30px;
+        position: relative;
+        bottom: 30px;
+        right: 38px;
+    }
+    .page-1 h3{
+        font-size: 15px;
+        margin-right: 80px;
+    }
+    .page-1 p{
+        font-size: 15px;
+    }
+}
